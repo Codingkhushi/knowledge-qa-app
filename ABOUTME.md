@@ -1,16 +1,15 @@
 # About Me
 
-## [Khushi Gupta]
+## Khushi Gupta
 
-**Role**: [Your desired role, e.g., Full Stack Developer]
 
-**Location**: [Nashik]
+**Location**: Nashik
 
 ## Contact
 
-- **Email**: [khushi70211@gmail.com]
-- **LinkedIn**: [https://www.linkedin.com/in/khushi-gupta-657562249/]
-- **GitHub**: [https://github.com/Codingkhushi]
+- **Email**: khushi70211@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/khushi-gupta-657562249/
+- **GitHub**: https://github.com/Codingkhushi
 
 ## Resume
 
