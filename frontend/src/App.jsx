@@ -1,0 +1,21 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Documents from './pages/Documents';
+import Ask from './pages/Ask';
+import Status from './pages/Status';
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/documents" element={<Documents />} />
+        <Route path="/ask" element={<Ask />} />
+        <Route path="/status" element={<Status />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
