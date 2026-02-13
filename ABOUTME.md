@@ -22,8 +22,8 @@
 
 ### Experience
 
-**[Avijo]** - [React Developer]
-*[Dec 2025 -Feb 2026]*
+**Avijo** - React Developer
+*Dec 2025 -Feb 2026*
 - [Developed core user authentication features including login, sign-up, and account creation flows, reducing user
 onboarding time by 40%
 - Designed and implemented the main Homescreen interface with 5+ key navigation components to enhance user
