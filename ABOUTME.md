@@ -1,21 +1,18 @@
 # About Me
 
-## [Your Name]
+## [Khushi Gupta]
 
 **Role**: [Your desired role, e.g., Full Stack Developer]
 
-**Location**: [Your location]
+**Location**: [Nashik]
 
 ## Contact
 
-- **Email**: [your.email@example.com]
-- **LinkedIn**: [Your LinkedIn URL]
-- **GitHub**: [Your GitHub profile]
-- **Portfolio**: [Your portfolio URL if applicable]
+- **Email**: [khushi70211@gmail.com]
+- **LinkedIn**: [https://www.linkedin.com/in/khushi-gupta-657562249/]
+- **GitHub**: [https://github.com/Codingkhushi]
 
 ## Resume
-
-[Add a brief summary or link to your full resume]
 
 ### Skills
 - Frontend: React, JavaScript, HTML, CSS, Tailwind
@@ -26,15 +23,24 @@
 
 ### Experience
 
-**[Company Name]** - [Role]
-*[Dates]*
-- [Key achievement/responsibility]
-- [Key achievement/responsibility]
+**[Avijo]** - [React Developer]
+*[Dec 2025 -Feb 2026]*
+- [Developed core user authentication features including login, sign-up, and account creation flows, reducing user
+onboarding time by 40%
+- Designed and implemented the main Homescreen interface with 5+ key navigation components to enhance user
+experience
+- Led the development of the complete doctor appointment booking flow spanning 6 screens, enabling users to
+search from 100+ doctors, select appointment slots, and receive booking confirmations
+- Integrated 4+ RESTful APIs to connect frontend components with backend services, achieving 95% success rate in
+API calls
+- Built a comprehensive appointment management system allowing users to view and manage multiple bookings,
+improving user retention by 25%
+- Contributed to 3 critical backend API modifications to ensure seamless integration and reduce response time by 30%]
 
 ### Education
 
-**[University Name]**
-*[Degree] in [Field], [Year]*
+**[Usha Mittal Institute of Technology SNDT Women’s University ]**
+*[B.Tech] in [IT], [2025]*
 
 ### Projects
 
@@ -47,4 +53,3 @@ This Knowledge Q&A app demonstrates:
 
 ---
 
-*Note: Please fill in your actual information above before submitting*
