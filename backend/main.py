@@ -35,7 +35,7 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 # Initialize embedding model (runs locally, no API needed)
-embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+embedding_model = SentenceTransformer('paraphrase-MiniLM-L3-v2')
 
 # Database initialization
 def init_db():
