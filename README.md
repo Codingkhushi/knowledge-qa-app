@@ -2,6 +2,11 @@
 
 A web application that allows users to upload documents and ask questions about them using AI. The app uses RAG (Retrieval-Augmented Generation) to provide accurate answers with source attribution.
 
+## 🌐 Live Demo
+- **Frontend**: https://knowledge-qa-app-nu.vercel.app/
+- **Backend API**: https://knowledge-qa-app-4.onrender.com/
+- **GitHub**: https://github.com/Codingkhushi/knowledge-qa-app
+
 ## Features
 
 - 📄 **Document Upload**: Upload text files (.txt) with drag-and-drop support
