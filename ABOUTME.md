@@ -38,8 +38,8 @@ improving user retention by 25%
 
 ### Education
 
-**[Usha Mittal Institute of Technology SNDT Women’s University ]**
-*[B.Tech] in [IT], [2025]*
+**Usha Mittal Institute of Technology SNDT Women’s University **
+*B.Tech in IT, 2025*
 
 ### Projects
 
