@@ -24,7 +24,7 @@
 
 **Avijo** - React Developer
 *Dec 2025 -Feb 2026*
-- [Developed core user authentication features including login, sign-up, and account creation flows, reducing user
+- Developed core user authentication features including login, sign-up, and account creation flows, reducing user
 onboarding time by 40%
 - Designed and implemented the main Homescreen interface with 5+ key navigation components to enhance user
 experience
@@ -34,12 +34,12 @@ search from 100+ doctors, select appointment slots, and receive booking confirma
 API calls
 - Built a comprehensive appointment management system allowing users to view and manage multiple bookings,
 improving user retention by 25%
-- Contributed to 3 critical backend API modifications to ensure seamless integration and reduce response time by 30%]
+- Contributed to 3 critical backend API modifications to ensure seamless integration and reduce response time by 30%
 
 ### Education
 
-**Usha Mittal Institute of Technology SNDT Women’s University **
-*B.Tech in IT, 2025*
+Usha Mittal Institute of Technology SNDT Women’s University
+B.Tech in IT, 2025
 
 ### Projects
 
