@@ -118,7 +118,7 @@ async def query_groq(prompt: str, context: str) -> str:
                     "Content-Type": "application/json"
                 },
                 json={
-                    "model": "gpt-oss-120b",
+                    "model": "llama-3.3-70b-versatile",
                     "messages": [
                         {
                             "role": "system",
