@@ -7,13 +7,13 @@ import sqlite3
 import json
 from datetime import datetime
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity as sklearn_cosine_similarity
 import httpx
 from pathlib import Path
-
 from dotenv import load_dotenv
 
-# Load environment variables
+# Load environment variables from .env file
 load_dotenv()
 
 app = FastAPI(title="Knowledge Q&A API")
@@ -34,8 +34,8 @@ DB_PATH = "knowledge_qa.db"
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
-# Initialize embedding model (runs locally, no API needed)
-embedding_model = SentenceTransformer('paraphrase-MiniLM-L3-v2')
+# Initialize TF-IDF vectorizer (lightweight, no heavy models)
+vectorizer = TfidfVectorizer(max_features=1000)
 
 # Database initialization
 def init_db():
@@ -88,9 +88,15 @@ def chunk_text(text: str, chunk_size: int = 500, overlap: int = 50) -> List[str]
             chunks.append(chunk)
     return chunks
 
-def get_embedding(text: str) -> List[float]:
-    """Get embedding vector for text"""
-    return embedding_model.encode(text).tolist()
+def get_embedding(text: str, all_texts: List[str] = None) -> List[float]:
+    """Get TF-IDF embedding vector for text"""
+    global vectorizer
+    if all_texts:
+        # Fit vectorizer on all texts if provided
+        vectorizer.fit(all_texts)
+    # Transform the text
+    vector = vectorizer.transform([text]).toarray()[0]
+    return vector.tolist()
 
 def cosine_similarity(a: List[float], b: List[float]) -> float:
     """Calculate cosine similarity between two vectors"""
@@ -112,7 +118,7 @@ async def query_groq(prompt: str, context: str) -> str:
                     "Content-Type": "application/json"
                 },
                 json={
-                    "model": "llama-3.3-70b-versatile",
+                    "model": "gpt-oss-120b",
                     "messages": [
                         {
                             "role": "system",
@@ -214,6 +220,10 @@ async def upload_document(file: UploadFile = File(...)):
         
         # Chunk and embed the text
         chunks = chunk_text(text)
+        
+        # Fit vectorizer on all chunks
+        get_embedding(chunks[0], all_texts=chunks)
+        
         for idx, chunk in enumerate(chunks):
             embedding = get_embedding(chunk)
             c.execute(
