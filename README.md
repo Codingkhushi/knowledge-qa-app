@@ -7,6 +7,12 @@ A web application that allows users to upload documents and ask questions about 
 - **Backend API**: https://knowledge-qa-app-4.onrender.com/
 - **GitHub**: https://github.com/Codingkhushi/knowledge-qa-app
 
+
+https://github.com/user-attachments/assets/57089a02-d329-4004-8084-1f389a5ab5cd
+
+
+
+
 ## Features
 
 - 📄 **Document Upload**: Upload text files (.txt) with drag-and-drop support
